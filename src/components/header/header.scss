@@ -1,0 +1,12 @@
+
+@use '../../scss-variables' as *;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: $padding-standard;
+    h1 {
+        font-weight: $font-weight-light;
+    }
+}
