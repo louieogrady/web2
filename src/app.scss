@@ -8,23 +8,32 @@
   flex-direction: column;
 }
 
-.PanelContainer {
-  overflow-x: visible;
-  width: 33.3%;
-  padding: $padding-standard;
-  &::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-  }
+.PanelWrapper {
+  background-color: white;
+  padding: 0.5rem 0.7rem 1rem;
+  border-radius: 20px;
+  // margin-bottom: 20px;
   outline: 1px solid black;
+  margin: 10px 10px 20px 10px;
+  &.black {
+    background-color: black;
+    outline: 1px solid white;
+  }
+}
+
+.PanelColumn {
+  width: 33.3%;
   right: 2rem;
-  top: 0rem;
-  margin-left: auto;
-  z-index: 1; // 0;
+  z-index: 1;
   position: absolute;
   overflow: auto;
-  height: 100%;
-  background: white;
+  overflow-y: scroll;
+  height: calc(100% - $padding-column-panel-top-bottom);
+  padding: $padding-column-panel;
+  &::-webkit-scrollbar {
+    width: 0; 
+    background: transparent;
+  }
 }
 
 

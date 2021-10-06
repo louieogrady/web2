@@ -4,8 +4,29 @@
   p {
     color: black;
     font-size: $font-small;
+    white-space: pre-line;
   }
   .Title {
     font-size: $font-medium;
+    font-weight: 600;
+    line-height: $standard-lh;
+    border-bottom: 0.5px solid black;
   }
+
+  .TextContainer {
+    margin-top: 20px;
+  }
+
+  &.black {
+    p {
+      color: white;
+    }
+    
+    .Title {
+      border-bottom: 0.5px solid white;
+    }
+
+  }
+
+
 }

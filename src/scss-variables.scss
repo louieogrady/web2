@@ -5,9 +5,17 @@ $font-weight-regular: 300;
 $font-secondary: "orpheuspro",serif;
 
 $font-large: 4.5vw;
-$font-medium: 2.5vw;
-$font-small: 1.25vw;
+$font-medium: 2vw;
+$font-small: 1vw;
 
 $font-white: white;
 
 $padding-standard: 1rem;
+
+$padding-panel: 0.6rem;
+
+// Ensure top/bottom values match:
+$padding-column-panel: 2rem 0;
+$padding-column-panel-top-bottom: 2rem;
+
+$standard-lh: 1.8rem;
