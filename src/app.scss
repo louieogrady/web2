@@ -20,9 +20,17 @@
 }
 
 .PanelColumn {
-  padding: 11rem 0;
-  height: calc(100% - $padding-column-panel-top-bottom);
-  padding: $padding-column-panel;
+  @media (min-width: 1200px) {
+    height: calc(100% - $padding-column-panel-top-bottom);
+    padding: $padding-column-panel;
+    width: 33.3%;
+    right: 2rem;
+  }
+  @media (max-width: 1199px) {
+    height: calc(100% - $padding-column-panel-top-bottom-mobile);
+    padding: $padding-column-panel-mobile;
+  }
+
   z-index: 1;
   overflow-y: scroll;
   position: absolute;
@@ -32,11 +40,6 @@
     background: transparent;
   }
 
-  @media (min-width: 1200px) {
-    width: 33.3%;
-    right: 2rem;
-    padding: 2rem 0;
-  }
 }
 
 
