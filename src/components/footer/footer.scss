@@ -1,12 +1,15 @@
 @use '../../scss-variables' as *;
 
 .footer {
+    @media (min-width: 1200px) {
+        text-align: left;
+        padding-left: $padding-standard;
+        position: absolute;
+    }
     display: flex;
-    position: absolute;
     bottom: 0;
     flex-direction: column;
-    text-align: left;
-    padding-left: $padding-standard;
+    text-align: center;
     h1 {
         font-weight: $font-weight-regular;
         font-family: $font-secondary;

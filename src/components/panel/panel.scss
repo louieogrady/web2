@@ -3,8 +3,12 @@
 .Panel {
   p {
     color: $font-black;
-    font-size: $font-small;
+    
     white-space: pre-line;
+    font-size: $font-small-mob;
+    @media (min-width: 1200px) {
+      font-size: $font-small;
+    }
   }
   .Title {
     font-size: $font-medium;
