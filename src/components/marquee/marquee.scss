@@ -1,0 +1,10 @@
+
+.MarqueeContainer {
+  background: $background-white;
+  position: absolute;
+  font-size: calc(var(--marquee-width) - 5px);
+  height: 100%;
+  width: var(--marquee-width);
+  right: 0;
+  top: 0;
+}

@@ -9,20 +9,23 @@
 }
 
 .PanelWrapper {
-  background-color: white;
+  background-color: $background-white;
   padding: 0.5rem 0.7rem 1rem;
   border-radius: 20px;
-  // margin-bottom: 20px;
   outline: 1px solid black;
   margin: 10px 10px 20px 10px;
   &.black {
-    background-color: black;
+    background-color: $background-black;
     outline: 1px solid white;
   }
 }
 
 .PanelColumn {
-  width: 33.3%;
+
+  @media (min-width: 1200px){
+    width: 33.3%;
+  }
+
   right: 2rem;
   z-index: 1;
   position: absolute;
