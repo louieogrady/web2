@@ -6,22 +6,14 @@ import Panel from './components/panel/panel.component';
 
 function App() {
 
-  // const randomiseBlur = () => {
-  //   const body: any = (document.querySelector('body',':before')
-  //   const head: any = (getComputedStyle(document.querySelector('head')!, ':before'))
-  //   const randomNum =  Math.ceil(Math.random() * (4 - 0 + 1) + 0)
-  //   body.setProperty('filter', `blur(${randomNum}px)`)  
-  //   console.log(body.style)
-  // }
-
-  // randomiseBlur();
+  const aboutText = ['Hello this is a test text', 'it should split on every comma', 'hopefully it does']
 
   return (
     <div className="App">
       <Header/>
       <Footer/>
       <div className="PanelContainer">
-        <Panel title="About" />
+        <Panel title="About" text={aboutText} />
       </div>
     </div>
   );
