@@ -8,6 +8,20 @@ interface MarqueeProps {
 const Marquee: React.FC<MarqueeProps> = ({ text }): JSX.Element => {
 
   return (
-    <div> </div>
-  ); 
+    <div className="MarqueeWrapper">
+      <div className="MarqueeWrapper__Container">
+        <p>
+          {text}
+        </p>
+        <p>
+          {text}
+        </p>
+        <p>
+          {text}
+        </p>
+      </div>
+    </div>
+  );
 }
+
+export default Marquee;

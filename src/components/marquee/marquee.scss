@@ -1,10 +1,44 @@
+@use '../../scss-variables' as *;
 
-.MarqueeContainer {
-  background: $background-white;
+
+.MarqueeWrapper {
+  height: 30px;
+  width: 82%;
+  z-index: 1;
+  text-align: center;
+  background: white;
+  outline: 1px solid black;
+  transform-origin: 70% 100%;
+  transform: rotate( -90deg);
   position: absolute;
-  font-size: calc(var(--marquee-width) - 5px);
-  height: 100%;
-  width: var(--marquee-width);
-  right: 0;
-  top: 0;
+
+  &__Container {
+    background: $background-white;
+    position: absolute;
+    font-size: calc($marquee-width);
+
+    animation: marquee 5s linear infinite;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    p {
+      color: $font-black;
+    }
+
+  }
+  
+}
+
+@keyframes marquee {
+
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
 }
