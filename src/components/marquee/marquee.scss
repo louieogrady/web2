@@ -6,7 +6,6 @@
   @media (min-width: 1200px) {
     display: block;
     left: 55%;
-    // height: 100%;
     writing-mode: vertical-rl;
     text-orientation: sideways-right;
     position: absolute;
@@ -15,10 +14,8 @@
   .MarqueeContainer {
     &__Inner {
       p {
-        // overflow: hidden;
         white-space: pre;
-        // height: 100%;
-        animation: marquee 8s linear infinite;
+        animation: marquee 0.03s linear infinite;
         display: inline-flex;
         
         span {
