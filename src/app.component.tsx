@@ -9,8 +9,9 @@ function App() {
 
   const aboutText = [`Louie is a frontend web developer with over 2 year's professional experience.`, '\n His main experience is with Javascript/Typescript and Angular 2+, but also has experience working with React and Redux Toolkit.', '\n As a web developer he is excited about creating innovative browser based user experiences. But he is also very interested in functional programming and devOps.'];
   const previousText = ['Louie studied Contemporary Music Composition at the Royal Welsh College of Music (RWCMD) and has an MA in Art from the Manchester School of Art (MIRIAD).', '\n As a multidisciplinary artist, he has over 5 years experience of delivering commissioned work from the initial proposal stage to installing work onsite across Europe.', '\n He has exhibited work at the Wellcome Collection, Brass International Festival, Gallery Miroslav Kraljevic and London Short Film Festival.'];
-  const contactText = ['mailto:l.ogrady@gmail.com', 'https://linkedin.com/in/louieogrady', 'https://soundcloud.com/muesliboys']
-  const marqueeText = ["This is a test mfer, this is sa test agfdfsdgsdfg dfgd fgdf gdf  gdf gdfg dfg dfg dfg dfg df gfd h trhf hfg h"]
+  const contactText = ['mailto:l.ogrady@gmail.com', 'https://linkedin.com/in/louieogrady', 'https://soundcloud.com/muesliboys'];
+  const marqueeText = ['An entity, bent, a face, painted blue, boundaried in green, alone', 'thoughtspace pallasades everywhere, somewhere in utopia I cast concrete for novel purposes, to feel concrete, for guests to view', 'not here, today, airless, soft countenance, nature sounds, this is truly heaven'];
+
   return (
     <div className="App">
       <Header/>

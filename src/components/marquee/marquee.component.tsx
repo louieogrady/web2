@@ -7,20 +7,20 @@ interface MarqueeProps {
 
 const Marquee: React.FC<MarqueeProps> = ({ text }): JSX.Element => {
 
+  const sentences = text.map((t) => <span> {t} </span>)
+
   return (
+
     <div className="MarqueeWrapper">
-      <div className="MarqueeWrapper__Container">
-        <p>
-          {text}
-        </p>
-        <p>
-          {text}
-        </p>
-        <p>
-          {text}
-        </p>
+      <div className="MarqueeContainer">
+        <div className="MarqueeContainer__Inner">
+          <p>
+            {sentences}
+          </p>
+        </div>
       </div>
     </div>
+
   );
 }
 

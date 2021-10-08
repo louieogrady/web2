@@ -5,10 +5,12 @@
     @media (min-width: 1200px) {
         text-align: left;
         padding-left: $padding-standard;
+        line-height: 1rem;
     }
     display: flex;
     flex-direction: column;
     text-align: center;
+    line-height: 2rem;
     h1 {
         font-weight: $font-weight-light;
         font-family: $font-header;

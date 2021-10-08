@@ -5,11 +5,13 @@
         text-align: left;
         padding-left: $padding-standard;
         position: absolute;
+        line-height: 1rem;
     }
     display: flex;
     bottom: 0;
     flex-direction: column;
     text-align: center;
+    line-height: 2rem;
     h1 {
         font-weight: $font-weight-regular;
         font-family: $font-secondary;
