@@ -1,5 +1,60 @@
 @use '../../scss-variables' as *;
 
-.panel {
-  
+.Panel {
+  p {
+    color: $font-black;
+    
+    white-space: pre-line;
+    font-size: $font-small-mob;
+    @media (min-width: 1200px) {
+      font-size: $font-small;
+    }
+  }
+  .Title {
+    font-size: $font-medium;
+    font-weight: 600;
+    line-height: $standard-lh;
+    border-bottom: 0.5px solid black;
+  }
+
+  .TextContainer {
+    margin-top: 20px;
+  }
+
+  &.black, &.links {
+    p {
+      color: $background-white;
+    }
+    
+    .Title {
+      border-bottom: 0.5px solid white;
+    }
+
+  }
+
+  &.links {
+    font-size: 0;
+  }
+
+  a {
+
+    font-size: $font-small-mob;
+    @media (min-width: 1200px) {
+      font-size: $font-small;
+    }
+
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 100ms;
+    white-space: pre-line;
+    &:hover {
+      color: rgba(255, 0, 151, 0.9);
+      text-decoration-color: rgba(255, 0, 151, 0.9);
+      overflow: hidden;
+    }
+  }
+
+
+
+
+
 }

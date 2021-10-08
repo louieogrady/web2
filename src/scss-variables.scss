@@ -1,13 +1,33 @@
 $font-primary: 'Inter', sans-serif;
+$font-header: 'Open Sans', sans-serif;
 $font-weight-light: 400;
 $font-weight-regular: 300;
 
 $font-secondary: "orpheuspro",serif;
 
-$font-large: 4.5vw;
-$font-medium: 2.5vw;
-$font-small: 1.25vw;
+$font-header: 2.2rem;
+$font-large: 1rem;
+$font-medium: 1rem;
+// $font-small: 1vw;
+$font-small: 0.45rem;
+
+$font-small-mob: 1rem;
 
 $font-white: white;
+$font-black: black;
+$background-white: white;
+$background-black: black;
 
 $padding-standard: 1rem;
+
+$padding-panel: 0.6rem;
+
+// Ensure top/bottom values match:
+$padding-column-panel: 1rem 0 0 2rem;
+$padding-column-panel-top-bottom: 1rem;
+$padding-column-panel-mobile: 11rem 0;
+$padding-column-panel-top-bottom-mobile: 11rem;
+
+$standard-lh: 1.8rem;
+
+$marquee-width: 20px;

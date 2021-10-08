@@ -1,0 +1,41 @@
+@use '../../scss-variables' as *;
+
+.MarqueeWrapper {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: block;
+    left: 55%;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    position: absolute;
+  }
+  
+  .MarqueeContainer {
+    &__Inner {
+      p {
+        white-space: pre;
+        animation: marquee 0.03s linear infinite;
+        display: inline-flex;
+        
+        span {
+          display: inline-block;
+          padding-right: 10px;
+          font-size: 1rem;
+        }
+      }
+  
+    }
+
+  }
+}
+
+
+@keyframes marquee {
+	from {
+		transform: translateY(16%);
+	}
+	to {
+		transform: translateY(-100%);
+	}
+}
