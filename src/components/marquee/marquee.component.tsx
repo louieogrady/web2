@@ -7,7 +7,7 @@ interface MarqueeProps {
 
 const Marquee: React.FC<MarqueeProps> = ({ text }): JSX.Element => {
 
-  const sentences = text.map((t) => <span> {t} </span>)
+  const sentences = text.map((t) => <span> {t} </span> );
 
   return (
 

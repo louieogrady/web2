@@ -8,6 +8,10 @@
 }
 
 .PanelWrapper {
+  @media (min-width: 1200px) {
+    width: 81%;
+  }
+
   background-color: $background-white;
   padding: 0.5rem 0.7rem 1rem;
   border-radius: 20px;
@@ -17,14 +21,15 @@
     background-color: $background-black;
     outline: 1px solid white;
   }
+  
 }
 
 .PanelColumn {
   @media (min-width: 1200px) {
     height: calc(100% - $padding-column-panel-top-bottom);
     padding: $padding-column-panel;
-    width: 33.3%;
-    right: 2rem;
+    width: 35.3%;
+    right: 0;
   }
   @media (max-width: 1199px) {
     height: calc(100% - $padding-column-panel-top-bottom-mobile);

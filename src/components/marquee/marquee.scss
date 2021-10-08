@@ -1,34 +1,44 @@
 @use '../../scss-variables' as *;
 
 .MarqueeWrapper {
-	left: 55%;
-	height: 100%;
-	writing-mode: vertical-rl;
-	text-orientation: sideways-right;
-  position: absolute;
-}
+  display: none;
 
-.MarqueeContainer {
-  &__Inner {
-    p {
-      overflow: hidden;
-      white-space: nowrap;
-      height: 100%;
+  @media (min-width: 1200px) {
+    display: block;
+    left: 55%;
+    // height: 100%;
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    position: absolute;
+  }
+  
+  .MarqueeContainer {
+    &__Inner {
+      p {
+        // overflow: hidden;
+        white-space: pre;
+        // height: 100%;
+        animation: marquee 10s linear infinite;
+        display: inline-flex;
+        
+        span {
+          display: inline-block;
+          padding-right: 10px;
+          font-size: 1rem;
+        }
+      }
+  
     }
-    span {
-      animation: marquee 100s linear infinite;
-      display: inline-flex;
-      padding-right: 10px;
-      font-size: 1rem;
-    }
+
   }
 }
 
+
 @keyframes marquee {
 	from {
-		transform: translateY(-100%);
+		transform: translateY(50%);
 	}
 	to {
-		transform: translateY(0);
+		transform: translateY(-100%);
 	}
 }
