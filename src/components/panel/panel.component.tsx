@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './panel.scss';
 
 interface PanelProps {
@@ -13,26 +13,31 @@ const Panel: React.FC<PanelProps> = ({ title, text, theme = "white" }): JSX.Elem
   const linkRegex = new RegExp('(https?:(?:www.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9].[^s]{2,}|www.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9].[^s]{2,}|https?://(?:www.|(?!www))[a-zA-Z0-9]+.[^s]{2,}|www.[a-zA-Z0-9]+.[^s]{2,})');
 
   /** Crude parser for rendering correct html content for text content props */
-  const parseLine = (line: string) => {
+  const parseLine = (line: string, i: number) => {
 
     if (mailtoRegex.test(line)) {
       const emailSplit = line.split('@');
       const emailText = emailSplit[0].replace(/mailto:/, "");
-      return <a href={line}>{emailText} at {emailSplit[1]}</a>;
+      return <Fragment key={i.toString() + 'frag'}><a key={i.toString()} href={line}> {emailText} at {emailSplit[1]} </a><br></br></Fragment>;
     } else if (linkRegex.test(line)) {
       const webLinkText = line.split('//')[1];
-      return <a href={line} rel="noreferrer" target="_blank">{webLinkText}</a>;
+      return <Fragment key={i.toString() + 'frag'}><a key={i.toString()} href={line} rel="noreferrer" target="_blank">{webLinkText}</a><br></br></Fragment>;
     } else {
-      return <p>{line}</p>;
+      return <p key={i.toString()}>{line}</p>;
     }
 
   }
+  
+  /** Iterate over array of strings and passing each line to parser and render in p tag */
+  const renderLine = () => text.map((line, i) => parseLine(line, i) );
 
   return (
     <div className={`Panel ${ theme }`}>
-      <p className="Title"> { title } </p>
+      <p className="Title"> 
+        { title } 
+      </p>
       <div className="TextContainer">
-        {text.map((line) => <p>{parseLine(line)}</p>)}
+        { renderLine() }
       </div>
     </div>
   );

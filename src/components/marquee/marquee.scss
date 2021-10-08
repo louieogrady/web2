@@ -18,7 +18,7 @@
         // overflow: hidden;
         white-space: pre;
         // height: 100%;
-        animation: marquee 10s linear infinite;
+        animation: marquee 8s linear infinite;
         display: inline-flex;
         
         span {
@@ -36,7 +36,7 @@
 
 @keyframes marquee {
 	from {
-		transform: translateY(50%);
+		transform: translateY(16%);
 	}
 	to {
 		transform: translateY(-100%);

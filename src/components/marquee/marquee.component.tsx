@@ -7,7 +7,8 @@ interface MarqueeProps {
 
 const Marquee: React.FC<MarqueeProps> = ({ text }): JSX.Element => {
 
-  const sentences = text.map((t) => <span> {t} </span> );
+  /** Iterate over array of strings and render inside span tag */ 
+  const sentences = text.map((t, i) => <span key={i.toString()}> {t} </span> );
 
   return (
 
@@ -15,7 +16,7 @@ const Marquee: React.FC<MarqueeProps> = ({ text }): JSX.Element => {
       <div className="MarqueeContainer">
         <div className="MarqueeContainer__Inner">
           <p>
-            {sentences}
+            { sentences }
           </p>
         </div>
       </div>

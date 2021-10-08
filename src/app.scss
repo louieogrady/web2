@@ -34,6 +34,7 @@
   @media (max-width: 1199px) {
     height: calc(100% - $padding-column-panel-top-bottom-mobile);
     padding: $padding-column-panel-mobile;
+    width: 100%;
   }
 
   z-index: 1;

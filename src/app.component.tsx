@@ -25,7 +25,7 @@ function App() {
           <Panel title="PREVIOUS" text={previousText} theme="black" />
         </div>
         <div className="PanelWrapper black">
-          <Panel title="CONTACT / LINKS" text={contactText} theme="black" />
+          <Panel title="CONTACT / LINKS" text={contactText} theme="links" />
         </div>
       </div>
     </div>

@@ -21,7 +21,7 @@
     margin-top: 20px;
   }
 
-  &.black {
+  &.black, &.links {
     p {
       color: $background-white;
     }
@@ -32,17 +32,28 @@
 
   }
 
+  &.links {
+    font-size: 0;
+  }
+
   a {
-    color: inherit;
+
+    font-size: $font-small-mob;
+    @media (min-width: 1200px) {
+      font-size: $font-small;
+    }
+
     text-decoration: underline 0.15em rgba(255, 255, 255, 0);
     transition: text-decoration-color 100ms;
-
+    white-space: pre-line;
     &:hover {
       color: rgba(255, 0, 151, 0.9);
       text-decoration-color: rgba(255, 0, 151, 0.9);
       overflow: hidden;
     }
   }
+
+
 
 
 
