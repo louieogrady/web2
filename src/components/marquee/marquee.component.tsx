@@ -15,7 +15,10 @@ const Marquee: React.FC<MarqueeProps> = ({ text }): JSX.Element => {
     <div className="MarqueeWrapper">
       <div className="MarqueeContainer">
         <div className="MarqueeContainer__Inner">
-          <p>
+          <p className="Sentence">
+            { sentences }
+          </p>
+          <p className="Sentence Sentence--speed1">
             { sentences }
           </p>
         </div>
