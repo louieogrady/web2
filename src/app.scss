@@ -15,11 +15,11 @@
   background-color: $background-white;
   padding: 0.5rem 0.7rem 1rem;
   border-radius: 20px;
-  outline: 1px solid black;
+  border: 1px solid black;
   margin: 10px 10px 20px 10px;
   &.black {
     background-color: $background-black;
-    outline: 1px solid white;
+    border: 1px solid white;
   }
   
 }
