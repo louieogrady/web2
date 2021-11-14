@@ -83,7 +83,7 @@ body::before {
 }
 
 body::after {
-  @include dots2(12);
+  @include dots2(8);
   animation-duration: 43s;
   animation-delay: -32s;
 }
@@ -95,7 +95,7 @@ head::before {
 }
 
 head::after {
-  @include dots(8);
+  @include dots(5);
   animation-duration: 41s;
   animation-delay: -39s;
 }
