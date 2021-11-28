@@ -12,7 +12,8 @@ function App() {
   const previousText = ['Louie studied Contemporary Music Composition at the Royal Welsh College of Music (RWCMD) and has an MA in Art from the Manchester School of Art (MIRIAD).', '\nAs a multidisciplinary artist, he has over 5 years experience of delivering commissioned work from the initial proposal stage to installing work onsite across Europe.', '\nHe has exhibited work at the Wellcome Collection, Brass International Festival, Gallery Miroslav Kraljevic and London Short Film Festival.'];
   const contactText = ['mailto:l.ogrady@gmail.com', 'https://linkedin.com/in/louieogrady', 'https://soundcloud.com/muesliboys'];
   const marqueeText = ['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut erat vel quam consectetur convallis in in est. Sed ac nibh accumsan, interdum lorem a, feugiat nunc. Nunc eu mollis est. Quisque at tortor nec metus pretium hendrerit at eu leo. Fusce volutpat euismod sem non commodo. Aenean quis enim.'];
-  
+  const projectText = ['https://rhythm-composer.herokuapp.com'];
+
   return (
     <div className="App">
       <Header />
@@ -24,6 +25,9 @@ function App() {
         </div>
         <div className="PanelWrapper black">
           <Panel title="SKILLS" text={skillsText} theme="black" />
+        </div>
+        <div className="PanelWrapper black">
+          <Panel title="PROJECTS" text={projectText} theme="links" />
         </div>
         <div className="PanelWrapper black">
           <Panel title="PREVIOUS" text={previousText} theme="black" />
