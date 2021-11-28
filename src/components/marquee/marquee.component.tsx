@@ -18,9 +18,6 @@ const Marquee: React.FC<MarqueeProps> = ({ text }): JSX.Element => {
           <p className="Sentence">
             { sentences }
           </p>
-          <p className="Sentence Sentence--speed1">
-            { sentences }
-          </p>
         </div>
       </div>
     </div>
