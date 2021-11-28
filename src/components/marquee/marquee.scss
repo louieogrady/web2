@@ -16,7 +16,7 @@
       .Sentence {
         position: absolute;
         white-space: pre;
-        animation: marquee 30s linear infinite;
+        animation: marquee 8.6s linear infinite;
         display: inline-flex;
         
         span {
@@ -26,11 +26,11 @@
         }
 
         &--speed1 {
-          animation: marquee 22s linear infinite;
+          animation: marquee 15s linear infinite;
         }
 
         &--speed2 {
-          animation: marquee 17s linear infinite;
+          animation: marquee 20s linear infinite;
         }
       }
   
