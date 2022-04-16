@@ -11,7 +11,7 @@ function App() {
   const skillsText = ['TypeScript, JavaScript (ES5/ES6+), Angular 2+, RxJS, React, Redux Toolkit, Jasmine, React Testing Library, Tone.js, Material UI, HTML5, Responsive CSS, REST, Git, Jenkins, npm'];
   const previousText = ['Louie studied Contemporary Music Composition at the Royal Welsh College of Music (RWCMD) and has an MA in Art from the Manchester School of Art (MIRIAD).', '\n \n As a multidisciplinary artist, he has over 5 years experience of delivering commissioned work from the initial proposal stage to installing work onsite across Europe.', '\n \n He has exhibited work at the Wellcome Collection, Brass International Festival, Gallery Miroslav Kraljevic and London Short Film Festival.'];
   const contactText = ['mailto:l.ogrady@gmail.com', 'https://linkedin.com/in/louieogrady', 'https://soundcloud.com/muesliboys'];
-  const marqueeText = ['oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo'];
+  const marqueeText = ['ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo'];
   const projectText = ['https://rhythm-composer.herokuapp.com'];
 
   // Regexs for parsing text content
