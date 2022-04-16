@@ -73,47 +73,47 @@ body::before, body::after {
   height: 3em;
   content: '😭';
   mix-blend-mode: exclusion; // screen;
-  animation: 20s -27s move infinite ease-in-out alternate;
+  animation: 27s -27s move infinite ease-in-out alternate;
 }
 
 body::before {
   @include dots(5);
   animation-duration: 24s;
-  animation-delay: -47s;
+  animation-delay: -42s;
 }
 
 body::after {
   @include dots2(6);
   animation-duration: 23s;
-  animation-delay: -22s;
+  animation-delay: -24s;
 }
 
 head::before {
   @include dots2(4);
   animation-duration: 22s;
-  animation-delay: -23s;
+  animation-delay: -27s;
 }
 
 head::after {
   @include dots(3);
   animation-duration: 21s;
-  animation-delay: -39s;
+  animation-delay: -37s;
 }
 
 @keyframes move {
   from {
-    transform: rotate(0deg) scale(12) translateX(-20px);
+    transform: rotate(0deg) scale(8) translateX(-20px);
   }
   to {
-    transform: rotate(360deg) scale(18) translateX(20px);
+    transform: rotate(360deg) scale(14) translateX(20px);
   }
 }
 
 @keyframes move {
   from {
-    transform: rotate(0deg) scale(6) translateX(-20px);
+    transform: rotate(0deg) scale(7) translateX(-40px);
   }
   to {
-    transform: rotate(360deg) scale(12) translateX(20px);
+    transform: rotate(360deg) scale(12) translateX(40px);
   }
 }
